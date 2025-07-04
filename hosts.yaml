@@ -1,17 +1,15 @@
 ---
-azure-hosts:
-  hosts:
-    deployment-vm:
-      ansible_host: deployment
-      
+
+
 azurehosts:
   hosts:
-    spring:
-      ansible_host: dev-vm-1
-    vue:
-      ansible_host: frontend
+    dev-vm-1:
+      ansible_host: az-devops
+    frontend:
+      ansible_host: f-devops
+  
       
 dbservers:
   hosts:
-    db:
-      ansible_host: dbservers
+    postgress:
+      ansible_host: db-devops       
